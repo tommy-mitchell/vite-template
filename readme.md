@@ -1,4 +1,4 @@
-# lib-template
+# vite-template
 
 Personal [`tmplr`](https://github.com/loreanvictor/tmplr) template for creating React apps with Vite.
 
