@@ -1,0 +1,45 @@
+steps:
+  # remove template files
+
+  - remove: package.json
+  - remove: readme.md
+
+  # get project info
+
+  - read: project_name
+    prompt: 'Enter project name:'
+    default:
+      from: filesystem.rootdir
+
+  - read: include_dot_vscode
+    prompt: 'Include .vscode folder?'
+    choices:
+      - 'Yes'
+      - 'No'
+
+    # TODO: query for dependencies to include
+    # eg: tailwind, fonts, icons, boop, etc
+
+  # setup project
+
+  - if:
+      eval: '{{ include_dot_vscode | matches: No }}'
+    steps:
+      - remove: ./template/.vscode
+
+  - copy: ./template/**/*
+    to: ./
+    include hidden: true
+
+  # finish
+
+  - remove: ./template/**/*
+    include hidden: true
+
+  # temporarily specify folders to remove (loreanvictor/tmplr#15)
+  - remove: ./template/.github
+  - remove: ./template/.vscode
+  - remove: ./template/src
+  - remove: ./template
+
+  - remove: .tmplr.yml

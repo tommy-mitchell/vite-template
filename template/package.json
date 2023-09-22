@@ -1,0 +1,49 @@
+{
+	"private": true,
+	"name": "{{ tmplr.project_name }}",
+	"license": "MIT",
+	"repository": "tommy-mitchell/{{ tmplr.project_name | skip: @tommy-mitchell/ }}",
+	"author": {
+		"name": "Tommy Mitchell",
+		"url": "https://tommymitchell.io"
+	},
+	"type": "module",
+	"engines": {
+		"node": "^18 || ^20"
+	},
+	"scripts": {
+		"dev": "vite",
+		"host": "vite --host",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"lint": "xo",
+		"format": "dprint fmt && xo --fix"
+	},
+	"dependencies": {
+		"clsx": "^2.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@phaphoso/eslint-plugin-dprint": "^0.5.2",
+		"@tommy-mitchell/tsconfig": "^2.0.0",
+		"@types/node": "^18",
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"@vitejs/plugin-react-swc": "^3.2.2",
+		"dprint": "^0.41.0",
+		"eslint-config-xo-react": "^0.27.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"sass": "^1.66.1",
+		"type-fest": "4.2.0",
+		"typescript": "~5.2.2",
+		"vite": "^4.4.9",
+		"vite-plugin-browserslist-useragent": "^0.2.2",
+		"vite-plugin-checker": "^0.5.6",
+		"vite-plugin-react-click-to-component": "^2.0.0",
+		"vite-tsconfig-paths": "^4.2.0",
+		"xo": "^0.56.0"
+	},
+	"browserslist": "> 0.5%, last 2 versions, not dead"
+}

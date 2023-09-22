@@ -1,0 +1,12 @@
+{
+	"private": true,
+	"name": "@tommy-mitchell/vite-template",
+	"version": "0.0.0",
+	"description": "Personal `tmplr` template for creating React apps with Vite.",
+	"license": "MIT",
+	"repository": "tommy-mitchell/vite-template",
+	"author": {
+		"name": "Tommy Mitchell",
+		"url": "https://tommymitchell.io"
+	}
+}

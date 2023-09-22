@@ -1,0 +1,36 @@
+{
+	"includes": ["**/*.{ts,tsx,cts,mts,js,jsx,cjs,mjs,md,mdx,css,scss}"],
+	"excludes": [
+		"**/node_modules",
+		"yarn.lock"
+	],
+	"plugins": [
+		"https://plugins.dprint.dev/typescript-0.87.1.wasm",
+		"https://plugins.dprint.dev/json-0.17.4.wasm",
+		"https://plugins.dprint.dev/markdown-0.16.1.wasm",
+		"https://plugins.dprint.dev/exec-0.4.3.json@42343548b8022c99b1d750be6b894fe6b6c7ee25f72ae9f9082226dd2e515072"
+	],
+	"lineWidth": 120,
+	"useTabs": true,
+	"typescript": {
+		"semiColons": "always",
+		"quoteProps": "consistent",
+		"useBraces": "always",
+		"bracePosition": "sameLine",
+		"singleBodyPosition": "nextLine",
+		"nextControlFlowPosition": "maintain",
+		"trailingCommas": "onlyMultiLine",
+		"arrowFunction.useParentheses": "maintain",
+		"typeAssertion.spaceBeforeExpression": false,
+		"jsxAttributes.preferSingleLine": true,
+		"jsxElement.preferSingleLine": true,
+		"unionAndIntersectionType.preferSingleLine": true,
+		"module.sortImportDeclarations": "maintain"
+	},
+	"exec": {
+		"commands": [{
+			"command": "xo --fix --stdin --stdin-filename={{file_path}}",
+			"exts": ["js", "jsx", "ts", "tsx", "mdx", "md", "css", "scss"]
+		}]
+	}
+}
