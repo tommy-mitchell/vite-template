@@ -1,0 +1,46 @@
+{
+	"xo.enable": true,
+	"xo.format.enable": false,
+	"xo.overrideSeverity": "warn",
+	"xo.debounce": 100,
+	"[json]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[mdx]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "dprint.dprint",
+		"editor.formatOnSave": true
+	}
+}
