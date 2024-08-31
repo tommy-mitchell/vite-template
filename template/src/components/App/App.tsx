@@ -1,9 +1,7 @@
-import React from "react";
-
-export default function App() {
+export function App() {
 	return (
-		<>
+		<main className="container">
 			<p>Hello, world!</p>
-		</>
+		</main>
 	);
 }

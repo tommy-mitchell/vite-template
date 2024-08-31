@@ -1,6 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // eslint-disable-line n/file-extension-in-import
-import App from "@components/App";
+import ReactDOM from "react-dom/client";
+import { App } from "@/components/App";
+import "./reset.scss";
+import "./tailwind.scss";
 
 ReactDOM.createRoot(document.querySelector("#root")!).render(
 	<React.StrictMode>

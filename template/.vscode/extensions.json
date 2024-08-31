@@ -2,5 +2,5 @@
     "recommendations": [
         "dprint.dprint",
         "samverschueren.linter-xo",
-    ]
+    ],
 }

@@ -6,7 +6,7 @@
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
 		"allowImportingTsExtensions": true,
-		"module": "ESNext",
+		"module": "preserve",
 		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
@@ -14,15 +14,7 @@
 		"allowJs": true,
 		"baseUrl": ".",
 		"paths": {
-			"@assets/*": ["./src/assets/*"],
-			"@content/*": ["./src/content/*"],
-			"@components/*": ["./src/components/*/index.ts"],
-			"@helpers/*": ["./src/helpers/*"],
-			"@helpers": ["./src/helpers/index.ts"],
-			"@hooks/*": ["./src/hooks/*"],
-			"@utils/*": ["./src/utils/*"],
-			"@utils": ["./src/utils/index.ts"],
-			"~/*": ["./src/*"]
-		}
-	}
+			"@/*": ["./src/*"],
+		},
+	},
 }

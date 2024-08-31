@@ -9,41 +9,51 @@
 	},
 	"type": "module",
 	"engines": {
-		"node": "^18 || ^20"
+		"node": "^18.19 || ^20.8 || >=21"
 	},
 	"scripts": {
 		"dev": "vite",
 		"host": "vite --host",
-		"build": "tsc && vite build",
+		"build": "tsc --noEmit && vite build",
 		"preview": "vite preview",
 		"lint": "xo",
 		"format": "dprint fmt && xo --fix"
 	},
 	"dependencies": {
-		"clsx": "^2.0.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"@radix-ui/react-tooltip": "1.1.2",
+		"get-range": "4.0.0",
+		"lucide-react": "0.436.0",
+		"react": "18.3.1",
+		"react-dom": "18.2.0",
+		"tailwind-merge": "2.5.2",
+		"use-boop-simple": "0.1.0"
 	},
 	"devDependencies": {
-		"@phaphoso/eslint-plugin-dprint": "^0.5.2",
-		"@tommy-mitchell/tsconfig": "^2.0.0",
-		"@types/node": "^18",
-		"@types/react": "^18.2.21",
-		"@types/react-dom": "^18.2.7",
-		"@vitejs/plugin-react-swc": "^3.2.2",
-		"dprint": "^0.41.0",
-		"eslint-config-xo-react": "^0.27.0",
-		"eslint-plugin-react": "^7.33.2",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"sass": "^1.66.1",
-		"type-fest": "4.2.0",
-		"typescript": "~5.2.2",
-		"vite": "^4.4.9",
-		"vite-plugin-browserslist-useragent": "^0.2.2",
-		"vite-plugin-checker": "^0.5.6",
-		"vite-plugin-react-click-to-component": "^2.0.0",
-		"vite-tsconfig-paths": "^4.2.0",
-		"xo": "^0.56.0"
-	},
-	"browserslist": "> 0.5%, last 2 versions, not dead"
+		"@mdx-js/rollup": "3.0.1",
+		"@tailwindcss/typography": "0.5.15",
+		"@tailwindcss/container-queries": "0.1.1",
+		"@tommy-mitchell/dprint-config": "0.4.0",
+		"@tommy-mitchell/eslint-config-xo": "0.7.0",
+		"@tommy-mitchell/tsconfig": "2.1.0",
+		"@types/mdx": "2.0.13",
+		"@types/node": "18.19",
+		"@types/react": "18.3.5",
+		"@types/react-dom": "18.3.0",
+		"@vitejs/plugin-react-swc": "3.7.0",
+		"autoprefixer": "10.4.20",
+		"dprint": "0.47.2",
+		"sass": "1.77.8",
+		"tailwind-mode-aware-colors": "2.0.2",
+		"tailwindcss": "3.4.10",
+		"tailwindcss-animate": "1.0.7",
+		"tailwindcss-center": "0.1.2",
+		"tailwindcss-radix": "3.0.4",
+		"type-fest": "4.26.0",
+		"typescript": "5.5.4",
+		"vite": "5.4.2",
+		"vite-plugin-checker": "0.7.2",
+		"vite-plugin-react-click-to-component": "3.0.0",
+		"vite-tsconfig-paths": "5.0.1",
+		"xo": "0.59.3"
+	}
 }

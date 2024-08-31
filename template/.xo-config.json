@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json.schemastore.org/eslintrc.json",
+	"extends": [
+		"@tommy-mitchell/xo",
+		"@tommy-mitchell/xo/react",
+		"@tommy-mitchell/xo/tailwind",
+		"@tommy-mitchell/xo/dprint"
+	],
+	"ignores": ["src/vite-env.d.ts"],
+	"rules": {}
+}
