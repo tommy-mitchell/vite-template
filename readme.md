@@ -6,8 +6,9 @@ Personal [`tmplr`](https://github.com/loreanvictor/tmplr) template for creating 
 
 ```sh
 git init
-npx tmplr@latest 'tommy-mitchell/vite-template#v0.1.0'
+npx tmplr@latest 'tommy-mitchell/vite-template#v0.2.0'
 yarn install
+npx dprint config update
 ```
 
 Run inside of desired installation directory.
